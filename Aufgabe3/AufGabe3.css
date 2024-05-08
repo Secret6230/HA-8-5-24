@@ -1,0 +1,53 @@
+.HA3 {
+    display: flex;
+    color:rgb(116, 181, 255);
+    background-image: linear-gradient(red,blue);
+    justify-content: center;
+    font-size: 50px; 
+    animation: flipAndZoom 2s infinite alternate;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+/* @keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+Das hier dreht den text z.b Flip pilF 
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+} */
+/* Das hier zoomt in den Text und lässt ihn größer erscheinen */
+
+
+@keyframes flipAndZoom {
+    0% {
+        transform: scale(0.5) rotateY(0deg); 
+    }
+    50% {
+        transform: scale(1) rotateY(90deg); 
+    }
+    100% {
+        transform: scale(0.5) rotateY(180deg); 
+    }
+}
+/* Das hier macht beides */
+
+
+#button1{
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
